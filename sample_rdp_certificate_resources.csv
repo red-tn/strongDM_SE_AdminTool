@@ -1,0 +1,9 @@
+type,name,hostname,port,username,identity_set,service_account,tags,secret_store,proxy_cluster,lock_required,downgrade_nla
+RDP Certificate,Production AD Server,prod-ad-01.company.com,3389,domain-admin,,svc_rdp_prod,env=production|service=domain,Strong Vault,None (Use Gateway),true,false
+RDP Certificate,Finance Terminal Server,finance-ts.company.com,3389,finance-admin,,svc_finance_rdp,env=production|service=finance|department=accounting,Strong Vault,None (Use Gateway),true,false
+RDP Certificate,HR Management Server,hr-mgmt.company.com,3389,hr-manager,,svc_hr_rdp,env=production|service=hr|department=human-resources,Strong Vault,None (Use Gateway),true,false
+RDP Certificate,Development Jump Server,dev-jump.company.com,3389,dev-admin,,svc_dev_rdp,env=development|team=devops|service=jumpbox,Strong Vault,None (Use Gateway),false,false
+RDP Certificate,Executive Workstation,exec-ws-01.company.com,3389,exec-user,,svc_exec_rdp,env=production|service=executive|security=high,Strong Vault,None (Use Gateway),true,false
+RDP Certificate,IT Support Terminal,itsupport-term.company.com,3389,support-admin,,svc_support_rdp,env=production|service=support|team=it,Strong Vault,None (Use Gateway),false,false
+RDP Certificate,Compliance Server,compliance-srv.company.com,3389,audit-user,,svc_audit_rdp,env=production|service=compliance|security=critical,Strong Vault,None (Use Gateway),true,false
+RDP Certificate,Test Certificate Server,test-cert-srv.company.com,3389,test-cert-user,,svc_test_rdp,env=test|service=certification|team=qa,Strong Vault,None (Use Gateway),false,false

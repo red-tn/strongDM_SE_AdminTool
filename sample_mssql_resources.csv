@@ -1,0 +1,9 @@
+type,name,hostname,port,username,password,database_name,tags,secret_store,proxy_cluster,lock_required
+MSSQL,Production SQL Server,prod-mssql-01.company.com,1433,sa,MSSQL_Prod123!,ERP_Database,env=production|service=database,Strong Vault,None (Use Gateway),true
+MSSQL,Financial SQL Server,finance-mssql.company.com,1433,finance_user,Finance_SQL456!,Financial_Data,env=production|service=finance,Strong Vault,None (Use Gateway),true
+MSSQL,HR Management SQL Server,hr-mssql.company.com,1433,hr_admin,HR_MSSQL789!,Employee_Records,env=production|service=hr,Strong Vault,None (Use Gateway),true
+MSSQL,Inventory SQL Server,inventory-mssql.company.com,1433,inv_user,Inventory_SQL123!,Stock_Management,env=production|service=inventory,Strong Vault,None (Use Gateway),false
+MSSQL,Development SQL Server,dev-mssql.company.com,1433,devuser,Dev_MSSQL456!,Development_DB,env=development|team=dotnet,Strong Vault,None (Use Gateway),false
+MSSQL,Reporting SQL Server,reports-mssql.company.com,1433,reports_user,Reports_SQL789!,Business_Intelligence,env=production|service=reporting,Strong Vault,None (Use Gateway),false
+MSSQL,Archive SQL Server,archive-mssql.company.com,1433,archive_user,Archive_SQL123!,Historical_Data,env=production|service=archive,Strong Vault,None (Use Gateway),true
+MSSQL,Test SQL Server,test-mssql.company.com,1433,testuser,Test_MSSQL456!,Test_Database,env=test|service=automation,Strong Vault,None (Use Gateway),false

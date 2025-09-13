@@ -1,0 +1,9 @@
+type,name,hostname,port,username,password,database_name,tags,secret_store,proxy_cluster,lock_required
+MySQL,Production MySQL Cluster,prod-mysql-01.company.com,3306,appuser,MySQL_Prod123!,ecommerce_db,env=production|service=database,Strong Vault,None (Use Gateway),true
+MySQL,Staging MySQL Server,staging-mysql.company.com,3306,staging_user,MySQL_Stage456!,staging_db,env=staging|team=qa,Strong Vault,None (Use Gateway),false
+MySQL,Analytics MySQL,analytics-mysql.company.com,3306,analytics,Analytics789!,analytics_warehouse,env=production|service=analytics,Strong Vault,None (Use Gateway),true
+MySQL,Development MySQL,dev-mysql.company.com,3306,devuser,MySQL_Dev123!,dev_playground,env=development|team=backend,Strong Vault,None (Use Gateway),false
+MySQL,CRM MySQL Database,crm-mysql.company.com,3306,crmuser,CRM_MySQL456!,customer_data,env=production|service=crm,Strong Vault,None (Use Gateway),true
+MySQL,Logs MySQL Database,logs-mysql.company.com,3306,loguser,Logs_MySQL789!,application_logs,env=production|service=logging,Strong Vault,None (Use Gateway),false
+MySQL,Backup MySQL Server,backup-mysql.company.com,3306,backupuser,Backup_MySQL123!,backup_metadata,env=production|service=backup,Strong Vault,None (Use Gateway),true
+MySQL,Test MySQL Instance,test-mysql.company.com,3306,testuser,Test_MySQL456!,test_automation,env=test|service=automation,Strong Vault,None (Use Gateway),false

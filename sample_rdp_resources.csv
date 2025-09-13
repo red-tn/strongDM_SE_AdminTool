@@ -1,0 +1,9 @@
+type,name,hostname,port,username,password,tags,secret_store,proxy_cluster,lock_required,downgrade_nla
+RDP,Windows File Server,fileserver-01.company.com,3389,administrator,Admin123!,env=production|os=windows,Strong Vault,None (Use Gateway),true,false
+RDP,Windows Domain Controller,dc-01.company.com,3389,Administrator,DomainAdmin456!,env=production|role=domain-controller,Strong Vault,None (Use Gateway),true,false
+RDP,Development Workstation,dev-ws-01.company.com,3389,developer,DevPass789!,env=development|team=devops,Strong Vault,None (Use Gateway),false,false
+RDP,Test SQL Server,test-sql.company.com,3389,sa,SqlAdmin123!,env=test|service=database,Strong Vault,None (Use Gateway),true,true
+RDP,IIS Web Server,iis-web-01.company.com,3389,iisuser,IISPass456!,env=production|service=web,Strong Vault,None (Use Gateway),false,false
+RDP,Backup Windows Server,backup-win.company.com,3389,backupuser,BackupWin789!,env=production|service=backup,Strong Vault,None (Use Gateway),true,false
+RDP,Terminal Server,termserver.company.com,3389,termuser,TerminalPass123!,env=production|service=terminal,Strong Vault,None (Use Gateway),false,true
+RDP,Print Server,printserver.company.com,3389,printadmin,PrintAdmin456!,env=production|service=printing,Strong Vault,None (Use Gateway),false,false

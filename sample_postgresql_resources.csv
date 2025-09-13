@@ -1,0 +1,9 @@
+type,name,hostname,port,username,password,database_name,tags,secret_store,proxy_cluster,lock_required
+PostgreSQL,Production PostgreSQL,prod-postgres-01.company.com,5432,appuser,Postgres_Prod123!,main_application,env=production|service=database,Strong Vault,None (Use Gateway),true
+PostgreSQL,Data Warehouse PostgreSQL,warehouse-postgres.company.com,5432,warehouse_user,Warehouse_PG456!,data_warehouse,env=production|service=analytics,Strong Vault,None (Use Gateway),true
+PostgreSQL,Reporting PostgreSQL,reports-postgres.company.com,5432,reports_user,Reports_PG789!,reporting_db,env=production|service=reporting,Strong Vault,None (Use Gateway),false
+PostgreSQL,Development PostgreSQL,dev-postgres.company.com,5432,devuser,Dev_Postgres123!,dev_database,env=development|team=backend,Strong Vault,None (Use Gateway),false
+PostgreSQL,User Management PostgreSQL,users-postgres.company.com,5432,usersmgr,UserMgmt_PG456!,user_profiles,env=production|service=auth,Strong Vault,None (Use Gateway),true
+PostgreSQL,Content Management PostgreSQL,cms-postgres.company.com,5432,cmsuser,CMS_Postgres789!,content_db,env=production|service=cms,Strong Vault,None (Use Gateway),false
+PostgreSQL,E-commerce PostgreSQL,ecom-postgres.company.com,5432,ecomuser,Ecom_PG123!,online_store,env=production|service=ecommerce,Strong Vault,None (Use Gateway),true
+PostgreSQL,Test PostgreSQL,test-postgres.company.com,5432,testuser,Test_PG456!,test_scenarios,env=test|service=automation,Strong Vault,None (Use Gateway),false
