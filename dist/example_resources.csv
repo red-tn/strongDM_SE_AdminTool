@@ -1,0 +1,6 @@
+type,name,hostname,port,username,password,tags,secret_store,proxy_cluster,database_name,key_type,lock_required,downgrade_nla
+SSH,Production Web Server,web01.example.com,22,admin,mypassword123,environment:production,None,None (use gateway),,password,,
+SSH,Dev Server with Key,dev01.example.com,22,root,"-----BEGIN PRIVATE KEY-----...",type=ssh,Strong Vault,cluster-east,,private_key,,
+RDP,Windows SQL Server,sql01.example.com,3389,administrator,winpassword,type-windows,None,None (use gateway),,,true,false
+MySQL,Main Database,db01.example.com,3306,dbuser,dbpassword,database:mysql,Strong Vault,cluster-west,maindb,,,
+PostgreSQL,Analytics DB,analytics.example.com,5432,analyst,analpassword,type|postgres,None,None (use gateway),analytics_db,,,

@@ -1,0 +1,9 @@
+type,name,hostname,port,username,password,tags,secret_store,proxy_cluster,key_type
+SSH,Production Web Server,prod-web-01.company.com,22,ubuntu,,env=production,Strong Vault,None (Use Gateway),
+SSH,Staging Database Server,staging-db.company.com,22,admin,,env=staging|team=devops,Strong Vault,None (Use Gateway),
+SSH,Development Jump Box,dev-jumpbox.company.com,2222,developer,,env=development|region=us-east,Strong Vault,None (Use Gateway),
+SSH,API Gateway Server,api-gw-01.company.com,22,apiuser,,env=production|service=api,Strong Vault,None (Use Gateway),
+SSH,Log Aggregation Server,logs.company.com,22,loguser,,env=production|service=logging,Strong Vault,None (Use Gateway),
+SSH,CI/CD Build Server,jenkins.company.com,22,jenkins,,env=tools|service=ci-cd,Strong Vault,None (Use Gateway),
+SSH,Monitoring Server,monitor.company.com,22,prometheus,,env=production|service=monitoring,Strong Vault,None (Use Gateway),
+SSH,Backup Server,backup.company.com,22,backupuser,,env=production|service=backup,Strong Vault,None (Use Gateway),

@@ -1,0 +1,9 @@
+type,name,hostname,port,username,password,tags,secret_store,proxy_cluster,lock_required
+Redis,Production Redis Cluster,prod-redis-01.company.com,6379,redis_admin,Redis_Prod123!,env=production|service=cache,Strong Vault,None (Use Gateway),true
+Redis,Session Store Redis,session-redis.company.com,6379,session_user,Session_Redis456!,env=production|service=sessions,Strong Vault,None (Use Gateway),false
+Redis,Queue Redis Server,queue-redis.company.com,6379,queue_worker,Queue_Redis789!,env=production|service=messaging,Strong Vault,None (Use Gateway),false
+Redis,Analytics Redis,analytics-redis.company.com,6379,analytics_user,Analytics_Redis123!,env=production|service=analytics,Strong Vault,None (Use Gateway),true
+Redis,Rate Limiting Redis,ratelimit-redis.company.com,6379,ratelimit_user,RateLimit_Redis456!,env=production|service=security,Strong Vault,None (Use Gateway),false
+Redis,Development Redis,dev-redis.company.com,6379,devuser,Dev_Redis789!,env=development|team=backend,Strong Vault,None (Use Gateway),false
+Redis,Pub/Sub Redis,pubsub-redis.company.com,6379,pubsub_user,PubSub_Redis123!,env=production|service=realtime,Strong Vault,None (Use Gateway),false
+Redis,Test Redis Instance,test-redis.company.com,6379,testuser,Test_Redis456!,env=test|service=automation,Strong Vault,None (Use Gateway),false
