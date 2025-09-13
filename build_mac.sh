@@ -16,14 +16,27 @@ source build_env/bin/activate
 echo "Installing dependencies in virtual environment..."
 pip install pyinstaller strongdm
 
-# Build standalone executable first
+# Build standalone executable first with explicit tkinter imports
 echo "Building standalone executable..."
-pyinstaller --onefile --windowed --name "StrongDM-Manager" strongdm_manager.py
+pyinstaller --onefile --windowed \
+    --hidden-import tkinter \
+    --hidden-import tkinter.ttk \
+    --hidden-import tkinter.filedialog \
+    --hidden-import tkinter.messagebox \
+    --hidden-import tkinter.scrolledtext \
+    --name "StrongDM-Manager" \
+    strongdm_manager.py
 
 # Try to build app bundle (may not work on all macOS versions)
 echo "Attempting to build macOS app bundle..."
-pyinstaller --windowed --name "StrongDM-Manager-App" \
+pyinstaller --windowed \
+    --hidden-import tkinter \
+    --hidden-import tkinter.ttk \
+    --hidden-import tkinter.filedialog \
+    --hidden-import tkinter.messagebox \
+    --hidden-import tkinter.scrolledtext \
     --osx-bundle-identifier "com.strongdm.manager" \
+    --name "StrongDM-Manager-App" \
     strongdm_manager.py
 
 # Copy additional files to dist folder

@@ -11,9 +11,16 @@ fi
 echo "Installing dependencies..."
 pip3 install pyinstaller strongdm
 
-# Build standalone executable (simpler, more reliable)
+# Build standalone executable (simpler, more reliable) with explicit tkinter imports
 echo "Building standalone executable..."
-pyinstaller --onefile --windowed --name "StrongDM-Manager" strongdm_manager.py
+pyinstaller --onefile --windowed \
+    --hidden-import tkinter \
+    --hidden-import tkinter.ttk \
+    --hidden-import tkinter.filedialog \
+    --hidden-import tkinter.messagebox \
+    --hidden-import tkinter.scrolledtext \
+    --name "StrongDM-Manager" \
+    strongdm_manager.py
 
 # Copy additional files to dist folder
 echo "Copying additional files..."
