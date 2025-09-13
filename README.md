@@ -116,6 +116,19 @@ Run the provided batch script:
 build_windows.bat
 ```
 
+### macOS
+Run the provided shell script:
+```bash
+chmod +x build_mac.sh
+./build_mac.sh
+```
+
+This creates:
+- **App Bundle**: `StrongDM-Manager.app` (drag to Applications)
+- **DMG Installer**: `StrongDM-Manager.dmg` (double-click to install)
+- **Standalone executable**: Command-line version
+- **Installation package**: Complete package with installer script
+
 ### OCI Container
 Run the provided shell script:
 ```bash
