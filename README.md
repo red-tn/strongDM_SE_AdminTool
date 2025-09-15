@@ -1,4 +1,4 @@
-# StrongDM SE Admin Tool
+# SDM SE Admin Tool
 
 A comprehensive GUI application for managing StrongDM resources including SSH, RDP, and Database connections. Supports both individual resource creation and bulk CSV import operations for POV environments.
 
